@@ -1,0 +1,149 @@
+.hero{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background-color: var(--primary-color);
+}
+
+.hero__container{
+    border-radius: 50px;
+}
+
+.hero__oportunity{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: var(--secondary-color);
+    font-size: 10px;
+    font-weight: 800;
+}
+
+
+
+.dot-green{
+    background-color: #58694F;
+    width: 0.2rem;
+    height: 0.2rem;
+    border-radius: 9999px;
+    padding: 0.4rem;
+}
+
+.hero__info{
+    padding: 1rem 0 0.5rem 0;
+}
+
+.hero__title{
+    font-family: "Newsreader", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--title-color);
+}
+
+.hero_brown{
+    color: var(--secondary-color);
+    font-style: italic;
+    font-size: 40px;
+}
+
+.hero__parraf{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 13px;
+    line-height: 1.5rem;
+}
+
+.hero__img {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), 
+                      url('../assets/img/Restaurante.png');
+    background-size: cover;
+    background-position: center;
+    
+    min-height: 200px; /* Ajusta según lo alto que quieras que sea tu tarjeta */
+    border-radius: 16px; /* Para que coincida con las esquinas redondeadas de tu imagen */
+    
+    /* Hacemos que este contenedor maneje el espacio */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Manda a su hijo (.img__text) hasta abajo */
+    padding: 15px;
+    margin-top: 1rem;
+    
+}
+
+.img-text{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2rem;
+    
+}
+
+.hero__badge{
+    font-size: 0.7rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #D5E8C8;
+    
+    
+    
+}
+
+.img__title{
+    color: var(--primary-color);
+     font-family: "Newsreader", Arial, Helvetica, sans-serif;
+     font-size: 1.5rem;
+     font-weight: 400;
+}
+
+
+.hero__btn{
+    width: 100%;;
+    text-align: center;
+    margin:1rem 0 auto ;
+    font-family: var(--subtitle-font);
+    
+}
+
+.hero__btn-cta{
+    display: block;
+    background-color: var(--btn-color);
+    padding: 0.7rem;
+    font-size: 10px;
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.hero__btn-wa{
+    display: block;
+    background-color: var(--third-color);
+    padding: 0.7rem;
+    font-size: 10px;
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.hero__data{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 10px;
+    font-family: var(--subtitle-font);
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.data__bold{
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+

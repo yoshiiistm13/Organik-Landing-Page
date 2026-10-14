@@ -1,0 +1,154 @@
+.form{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 3rem 1rem;
+    background-color: #EBE8E3;
+}
+
+.form__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__info{
+    padding-bottom: 2rem;
+}
+
+.form__small{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 0.2rem 1rem;
+}
+
+.form__title{
+    font-family: "Newsreader", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    color: var(--title-color);
+    padding: 0.5rem 0;
+}
+
+.form__text{
+    font-family: var(--subtitle-font);
+    font-size: 13px;
+    line-height: 1.5rem;
+}
+
+form{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 12px;
+    gap: 1rem;
+}
+
+.input__item{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.ext_num{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.ext{
+    padding: 0.5rem;
+    background-color: #EBE8E3;;
+}
+
+.ext_num p{
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+input, select{
+    padding: 0.5rem;
+    border: none;
+    width: 100%;
+    background-color: #EBE8E3;
+    font-family: var(--subtitle-font);
+    
+}
+
+label, .option__title{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    color: #2C201A;
+}
+
+
+fieldset{
+    border: none;
+    padding: 0.5rem;
+}
+
+.options{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide el espacio en dos partes iguales */
+    gap: 1rem;
+}
+
+.option__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem 1rem;
+    background-color: #f5f2eb; /* Tono crema claro de tu diseño */
+    color: #2c2c2c;
+    border: 1px solid #e0dbcd;
+    border-radius: 4px;        /* Opcional, esquinas ligeramente redondeadas */
+    text-align: center;
+    font-size: 0.68rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.option__item input[type="radio"]{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.option__item:hover {
+    border-color: #bfa89b;
+}
+
+.option__item:has(input:checked){
+    background-color: #2C201A;
+    color: #fff
+}
+
+.form__btn{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 50px;
+    font-family: var(--subtitle-font);
+}
+
+.garanty__text{
+font-family: var(--subtitle-font);
+color: var(--secondary-color);
+font-size: 0.6rem;
+letter-spacing: 0.1rem;
+text-align: center;
+font-weight: 700;
+padding: 0.5rem;
+}

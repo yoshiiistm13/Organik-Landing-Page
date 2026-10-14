@@ -1,0 +1,28 @@
+:root{
+   --primary-color: #FCF9F4;
+   --secondary-color: #8B6442;
+   --third-color: #58694F;
+   --title-color: #2C201A;
+
+   --btn-color: #8B6442;
+
+   --title-font: "newsreader", Helvetica ;
+   --subtitle-font: "Plus Jakarta Sans", Serif ;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.body{
+     max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    background-color: var(--primary-color);
+
+}

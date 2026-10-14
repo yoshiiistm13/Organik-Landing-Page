@@ -1,0 +1,92 @@
+.features{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    background-color: var(--primary-color);
+}
+
+.features__data{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.features__container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.features__small{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: var(--secondary-color);
+    font-size: 10px;
+    font-weight: 800;
+    
+}
+
+.features__title{
+    font-family: "Newsreader", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--title-color);
+    padding: 0.5rem 0;
+}
+
+.features__subtitle{
+    font-family: var(--subtitle-font);
+    font-size: 13px;
+    line-height: 1.5rem;
+}
+
+.features__img-container{
+    margin: 0 auto;
+    padding: 1.5rem 0; 
+ 
+}
+
+.features__img{
+    max-width: 100%; /* Evita que la imagen rebase el ancho permitido */
+    height: auto;    /* Mantiene la proporción original para que no se deforme */
+    border-radius: 32px;
+}
+
+.data__container{
+    background-color: #ffffff;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);  
+    border-radius: 12px;
+    
+}
+
+.data__title{
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+}
+
+.data__title h3{
+    font-family: var(--title-font);
+    font-weight: 500;
+    font-size: 23px;
+    color: var(--title-color);
+}
+
+.data__title img{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.data__text{
+    font-family: var( --subtitle-font);
+        font-size: 14px;
+    line-height: 1.5rem;
+    color: #50453C;
+    font-weight: 500;
+}

@@ -1,0 +1,76 @@
+.support{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background-color: var(--primary-color);
+}
+
+.support__container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.support__info{
+   padding-bottom: 2rem;
+}
+
+
+.support__small{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: var(--secondary-color);
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.support__title{
+    font-family: "Newsreader", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--title-color);
+    padding: 0.5rem 0;
+}
+
+.support__text{
+    font-family: var(--subtitle-font);
+    font-size: 13px;
+    line-height: 1.5rem;
+}
+
+.support__item{
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.support__card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.support__cards{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.support__card h3{
+    font-family: var(--title-font);
+    font-weight: 500;
+    font-size: 21px;
+    color: var(--title-color);
+}
+
+.support__card p{
+    font-family: var(--subtitle-font);
+    font-size: 12px;
+    color: #50453C;
+    font-weight: 500;
+}
