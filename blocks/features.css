@@ -41,16 +41,23 @@
     line-height: 1.5rem;
 }
 
-.features__img-container{
-    margin: 0 auto;
-    padding: 1.5rem 0; 
- 
-}
+
 
 .features__img{
-    max-width: 100%; /* Evita que la imagen rebase el ancho permitido */
-    height: auto;    /* Mantiene la proporción original para que no se deforme */
-    border-radius: 32px;
+   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), 
+                      url('../assets/img/IMG_0489.webp');
+    background-size: cover;
+    background-position: center;
+    
+    min-height: 200px; /* Ajusta según lo alto que quieras que sea tu tarjeta */
+    border-radius: 16px; /* Para que coincida con las esquinas redondeadas de tu imagen */
+    
+    /* Hacemos que este contenedor maneje el espacio */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Manda a su hijo (.img__text) hasta abajo */
+    padding: 15px;
+    margin-top: 1rem;
 }
 
 .data__container{
@@ -89,4 +96,21 @@
     line-height: 1.5rem;
     color: #50453C;
     font-weight: 500;
+}
+
+.features__img-team{
+     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), 
+                      url('../assets/img/326840939_864599311447467_699044949823393132_n.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    min-height: 200px; /* Ajusta según lo alto que quieras que sea tu tarjeta */
+    border-radius: 16px; /* Para que coincida con las esquinas redondeadas de tu imagen */
+    
+    /* Hacemos que este contenedor maneje el espacio */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Manda a su hijo (.img__text) hasta abajo */
+    padding: 15px;
+    margin-top: 1rem;
 }

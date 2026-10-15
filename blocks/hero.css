@@ -56,9 +56,9 @@
 
 .hero__img {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), 
-                      url('../assets/img/Restaurante.png');
+                      url('../assets/img/278553988_5690204494327764_313710277358353063_n.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     
     min-height: 200px; /* Ajusta según lo alto que quieras que sea tu tarjeta */
     border-radius: 16px; /* Para que coincida con las esquinas redondeadas de tu imagen */
@@ -134,7 +134,7 @@
     gap: 0.5rem;
     justify-content: center;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-size: 10px;
     font-family: var(--subtitle-font);
     letter-spacing: 2px;

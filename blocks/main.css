@@ -10,6 +10,9 @@
    --subtitle-font: "Plus Jakarta Sans", Serif ;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 *{
     margin: 0;

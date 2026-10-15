@@ -122,3 +122,23 @@
     text-decoration: none;
     font-weight: 600;
 }
+
+.investment__img{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), 
+                      url('../assets/img/WhatsApp+Image+2022-08-01+at+6.47.23+PM.webp');
+    background-size: cover;
+    background-position: center;
+    
+    min-height: 200px; /* Ajusta según lo alto que quieras que sea tu tarjeta */
+    border-radius: 16px; /* Para que coincida con las esquinas redondeadas de tu imagen */
+    
+    /* Hacemos que este contenedor maneje el espacio */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Manda a su hijo (.img__text) hasta abajo */
+    padding: 15px;
+    margin-top: 1rem;
+    
+}
+
+
