@@ -4,23 +4,100 @@
     margin: 0 auto;
     padding: 1rem 1rem 0;
     background-color: var(--primary-color);
+    border-bottom: 1px solid rgba(44, 32, 26, 0.1);
 }
 
 .header__container{
     display: flex;
-    justify-content: center;
+    flex-direction: reverse;
+    justify-content: space-between;
     align-items: center;
-    justify-items: center; 
-    gap: 8rem;
+    min-height: 76px;
+    gap: 1rem;
+}
+
+.header__brand{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.header__logo{
+    display: block;
+    width: 64px;
+    height: auto;
+}
+
+.header__label{
+    padding-left: 0.75rem;
+    border-left: 1px solid rgba(44, 32, 26, 0.2);
+    color: var(--third-color);
+    font-family: var(--subtitle-font);
+    font-size: 0.55rem;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.12em;
 }
 
 .header__btn{
-    color: white;
-    background-color: var(--secondary-color);
-    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    color: var(--primary-color);
+    background-color: var(--third-color);
+    padding: 0.75rem 0.9rem;
     text-decoration: none;
-    border-radius: 12px;
-    font-size: 12px;
-    font-family: "Plus Jakarta Sans", sans-serif;
+    border: 1px solid var(--third-color);
+    border-radius: 999px;
+    font-family: var(--subtitle-font);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
 }
 
+.header__btn::after{
+    content: "\2197";
+    font-size: 0.9rem;
+    line-height: 1;
+}
+
+.header__btn:hover{
+    color: var(--third-color);
+    background-color: transparent;
+    transform: translateY(-1px);
+}
+
+.header__btn:focus-visible{
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 3px;
+}
+
+@media (min-width:768px){
+    .header{
+       padding: 2rem 3rem 0;
+    }
+
+    .header__container{
+        min-height: 92px;
+    }
+
+    .header__brand{
+        gap: 1rem;
+    }
+
+    .header__logo{
+        width: 76px;
+    }
+
+    .header__label{
+        padding-left: 1rem;
+        font-size: 0.62rem;
+    }
+
+    .header__btn{
+        padding: 0.9rem 1.35rem;
+        font-size: 0.75rem;
+    }
+}

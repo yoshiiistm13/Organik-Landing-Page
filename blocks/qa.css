@@ -3,6 +3,7 @@
     margin: 0 auto;
     width: 100%;
     padding: 3rem 1rem;
+    background-color: var(--primary-color);
 }
 
 .qa__container{
@@ -61,10 +62,13 @@
     gap: 2rem;
 }
 
+
+
 .card__icon{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     gap: 1rem;
    
 
@@ -182,5 +186,74 @@ details[open]::details-content{
     height: auto;
     opacity:1 ;
 }
+
+@media (min-width:768px) { 
+    .qa{
+        padding: 2rem 3rem;
+    }
+
+    .qa__small{
+        font-size: 0.8rem;
+    }
+
+    .qa__title{
+        font-size: 2.75rem;
+    }
+
+    .qa__text{
+        font-size: 1.125rem;
+    }
+
+    .card__title{
+        font-size: 1.75rem;
+    }
+
+    .qa__card p {
+        font-size: 1.125rem;;
+    }
+
+    .asesor__card {
+        padding: 2rem 3rem;
+        gap: 1.5rem;
+    }
+
+    .asesor__img{
+        width: 100px;
+        margin: 0 auto;
+        padding: 0;
+
+    }
+
+    .asesor__small{
+        font-size: 0.8rem;
+    }
+
+    .asesor__title{
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    .asesor__text{
+        font-size: 1.125rem;
+        padding: 0 3rem;
+    }
+
+    .asesor__btn{
+        padding: 1rem 2rem;
+    }
+
+    .asesor__btn small{
+        font-size: 1rem;
+    }
+
+    .option__item {
+font-size: 0.90rem;
+    }
+
+    .form__btn{
+        font-size: 1rem;
+    }
+}
+    
 
 

@@ -2,7 +2,7 @@
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem 2rem;
     background-color: var(--primary-color);
 }
 
@@ -84,10 +84,7 @@
 .hero__badge{
     font-size: 0.7rem;
     font-family: "Plus Jakarta Sans", sans-serif;
-    color: #D5E8C8;
-    
-    
-    
+    color: #D5E8C8;    
 }
 
 .img__title{
@@ -146,4 +143,67 @@
     color: var(--secondary-color);
 }
 
+@media (min-width:768px){
+    .hero{
+        padding: 1rem 3rem 2rem;
+    }
+
+    .hero__oportunity{
+        font-size: 0.8rem;
+    }
+
+    .dot-green{
+        width: 1rem;
+        height: 1rem;
+        padding: 0.5rem;
+    }
+
+    .hero__title{
+        font-size: 2.75rem;
+    }
+
+    .hero_brown{
+        font-size: 45px ;
+    }
+
+    .hero__img{
+        min-height: 330px; 
+       
+    }
+
+    .hero__subtitle{
+        font-size: 1.125rem;
+    }
+
+    .hero__badge{
+        font-size: 1rem;
+    }
+
+    .img__title{
+        font-size: 2rem;
+    }
+
+    .hero__btn-cta{
+        margin-top: 2rem;
+        padding: 1.2rem;
+        font-size: 1rem;
+    }
+    .hero__btn-wa{
+        padding: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .hero__data{
+        font-size: 1.2rem;
+        font-family: var(--subtitle-font);
+        font-weight: 400;
+    }
+
+    .data__bold{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    
+}
 

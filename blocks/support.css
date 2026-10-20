@@ -74,3 +74,40 @@
     color: #50453C;
     font-weight: 500;
 }
+
+@media (min-width:768px){
+    .support{
+        padding: 2rem 3rem;
+    }
+
+    .support__small{
+        font-size: 0.8rem;
+    }
+
+    .support__title{
+        font-size: 2.75rem;
+    }
+    .support__text{
+        font-size: 1.125rem;
+    }
+    .support__cards{
+        gap: 1.5rem;
+    }
+
+    .support__item{
+        padding: 1.5rem 2rem;
+    }
+
+    .support__item img{
+        width: 9rem;
+    }
+
+    .support__card h3{
+        font-size: 1.75rem;
+    }
+    .support__card p{
+        font-size: 1.125rem;
+    }
+
+    
+}

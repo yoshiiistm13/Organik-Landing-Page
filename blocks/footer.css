@@ -65,8 +65,9 @@ margin: 0 auto;
     color: #fff;
 }
 
-.footer__btn:hover{
+.footer__btn:hover{ 
     border: 1px solid #fff;
+}
    
 .footer__btn a{
     text-decoration: none;
@@ -74,7 +75,7 @@ margin: 0 auto;
 }
     
     
-}
+
 
 .footer__grid{
     padding: 1rem 1.5rem;
@@ -82,7 +83,7 @@ margin: 0 auto;
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    justify-items: centerc;
+    justify-items: center;
     gap: 1rem;
     
 }
@@ -107,4 +108,36 @@ margin: 0 auto;
 #Capa_2{
     width: 10rem;
     margin: 0 auto;
+}
+
+@media (min-width:768px){
+    .footer{
+        padding: 2rem 3rem;
+    }
+
+    .footer__container p{
+        font-size: 1rem;
+        padding: 1rem 3rem;
+    }
+
+    .icon__svg{
+        width: 30px;
+    }
+
+    .footer__grid{
+        align-items: center;
+    }
+
+    .footer__grid a{
+        font-size: 0.9rem;
+    }
+
+    .footer__grid p{
+        font-size: 2rem;
+    }
+
+    .footer__container small{
+        font-size: 1rem;
+    }
+    
 }

@@ -114,3 +114,58 @@
     padding: 15px;
     margin-top: 1rem;
 }
+
+@media (min-width:768px){
+    .features{
+        padding: 2rem 3rem;
+    }
+
+    .features__small{
+        font-size: 0.8rem;
+    }
+
+    .features__title{
+        font-size: 2.75rem;
+    }
+
+    .features__subtitle{
+        font-size: 1.125rem;
+    }
+
+    .features__img{
+    min-height: 330px; /* Ajusta según lo alto que quieras que sea tu tarjeta */
+    }
+
+    .features__data{
+        gap: 1rem;
+    }
+
+    .data__container{
+        margin-top: 1rem;
+        padding: 1.7rem 2rem;
+    }
+
+    .data__title img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .data__title{
+        padding-bottom: 1rem;
+    }
+
+    .data__title h3{
+    font-size: 1.75rem;
+
+    }
+
+    .data__text{
+    font-size: 1.125rem;
+    }
+
+    .features__img-team{
+        min-height: 330px;
+    }
+
+    
+}
