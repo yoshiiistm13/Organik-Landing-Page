@@ -1,12 +1,14 @@
 .form{
-    max-width: 1200px;
-    margin: 0 auto;
+   
+ 
     width: 100%;
     padding: 3rem 1rem;
     background-color: #EBE8E3;
 }
 
 .form__container{
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
@@ -209,3 +211,28 @@ padding: 0.5rem;
         font-size: 0.8rem;
     }
 }
+
+@media (min-width:1200px) {
+    .form{
+        padding: 4rem 2rem;
+    }
+
+    .form__info{
+        margin: 0 auto;
+        text-align: center;
+        max-width: 900px;
+    }
+
+    .form__text{
+        font-size: 1rem;
+    }
+
+    .form__title{
+        padding-bottom: 2rem;
+    }
+
+    form{
+        max-width: 900px;
+    }
+}
+

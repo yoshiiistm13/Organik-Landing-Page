@@ -1,12 +1,14 @@
 .support{
-    max-width: 1200px;
+    
     width: 100%;
-    margin: 0 auto;
-    padding: 2rem 1rem;
+    
+    padding: 3rem 1rem;
     background-color: var(--primary-color);
 }
 
 .support__container{
+    margin: 0 auto;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -108,6 +110,77 @@
     .support__card p{
         font-size: 1.125rem;
     }
+}
 
-    
+@media (min-width: 1200px) {
+    .support {
+        padding: 4rem 2rem;
+    }
+
+    /* Convertimos el contenedor principal en Grid para ordenar los bloques */
+    .support__container {
+        display: grid;
+        max-width: 1200px;
+        margin: 0 auto;
+        grid-template-areas:
+            "text"
+            "cards"
+            "image";
+    }
+
+    /* Asignamos cada bloque a su área correspondiente */
+    .support__text-desktop {
+        grid-area: text;
+    }
+
+    .support__cards-desktop {
+        grid-area: cards;
+    }
+
+    .features__img-team {
+        grid-area: image;
+        min-height: 350px;
+        margin-top: 4rem;
+        padding: 30px;
+    }
+
+    .support__info {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 900px;
+    }
+
+    .support__title {
+        padding-bottom: 1rem;
+    }
+
+    .support__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .support__item {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        align-items: start;
+        gap: 3rem;
+    }
+
+    .support__item img {
+        width: 4rem;
+    }
+
+    .support__card h3 {
+        font-size: 1.5rem;
+    }
+
+    .support__card p {
+        font-size: 1rem;
+    }
+
+    .support__text{
+        font-size: 1rem;
+    }
+
 }
