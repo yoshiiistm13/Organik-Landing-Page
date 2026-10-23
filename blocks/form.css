@@ -143,6 +143,8 @@ fieldset{
     padding: 1.5rem;
     border-radius: 50px;
     font-family: var(--subtitle-font);
+    cursor: pointer;
+    transition: transform 0.4s ease;
 }
 
 .garanty__text{
@@ -220,7 +222,7 @@ padding: 0.5rem;
     .form__info{
         margin: 0 auto;
         text-align: center;
-        max-width: 900px;
+        max-width: 800px;
     }
 
     .form__text{
@@ -234,5 +236,13 @@ padding: 0.5rem;
     form{
         max-width: 900px;
     }
+
+    .form__btn:hover{
+        background-color: var(--third-color);
+        transform: translateY(-8px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    
 }
 

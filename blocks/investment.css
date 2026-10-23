@@ -129,6 +129,7 @@
     font-size: 11px;
     text-decoration: none;
     font-weight: 600;
+    transition: transform 0.4s ease;
 }
 
 .investment__img{
@@ -231,17 +232,44 @@
         align-items: center;
     }
 
-    .investment__cards{
-        width: 100%;
-        max-width: none;
-        padding: 0;
-    }
+    /* Contenedor de las tarjetas en columna */
+.investment__cards {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    overflow: hidden;
+    display: flex;           /* Vital para que formen la lista en columna */
+    flex-direction: column;  /* Apiladas verticalmente */
+    gap: 20px;               /* Espacio limpio entre cada tarjeta */
+}
 
-    .investment__card{
-        justify-content: space-between;
-        align-items: flex-start;
-    }
+/* Cada tarjeta individual */
+.investment__card {
+    display: flex;          /* Permite alinear el icono y el texto internamente */
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 15px;              /* Separación entre el icono de check y el texto */
+    
+    /* Estado inicial de la animación (ocultas y desplazadas a la izquierda) */
+    opacity: 0;
+    transform: translateX(-40px); 
+    
+    /* Transición lenta, relajante y fluida (1.2 segundos) */
+    transition: opacity 1.2s ease-out, 
+                transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
 
+/* Estado final cuando el JS activa la animación al hacer scroll */
+.investment__card.animado {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Retraso escalonado (efecto cascada ordenado) */
+.investment__card:nth-child(1) { transition-delay: 0.1s; }
+.investment__card:nth-child(2) { transition-delay: 0.25s; }
+.investment__card:nth-child(3) { transition-delay: 0.4s; }
+.investment__card:nth-child(4) { transition-delay: 0.55s; }
     .investment__img{
         width: 100%;
         height: 100%;
@@ -264,7 +292,25 @@
 
     .perfil__card{
         width: 100%;
+        height: 80%;
         margin: 0 auto 2rem;
-        border-radius: 0;
+        border-radius: 12px;
+        gap: 1rem;
+        max-width: 50%;
+    }
+
+    .investment__card p{
+        font-size: 0.85rem;
+    }
+
+   .perfil__card a{
+    width: 50%;
+   }
+
+    .perfil__card a:hover{
+        background-color: var(--primary-color);
+        transform: translateY(-8px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        
     }
 }
