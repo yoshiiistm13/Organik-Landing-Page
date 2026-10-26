@@ -304,7 +304,7 @@
     }
 
    .perfil__card a{
-    width: 50%;
+    width: 60%;
    }
 
     .perfil__card a:hover{
@@ -313,4 +313,6 @@
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         
     }
+
+
 }
